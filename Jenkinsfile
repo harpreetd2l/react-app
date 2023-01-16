@@ -15,7 +15,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("wessamabdelwahab/react-app")
+                    app = docker.build("harpreetd2l/react-app")
                     app.inside {
                         sh 'echo $(curl localhost:1233)'
                     }
